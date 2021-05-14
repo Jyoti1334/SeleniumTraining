@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="68515" started-at="2021-05-14T11:24:02Z" finished-at="2021-05-14T11:25:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="68515" started-at="2021-05-14T11:24:02Z" finished-at="2021-05-14T11:25:11Z">
+      <class name="com.windowhande.WindowHandle">
+        <test-method status="PASS" signature="intializeEnvironment()[pri:0, instance:com.windowhande.WindowHandle@71e7a66b]" name="intializeEnvironment" is-config="true" duration-ms="58921" started-at="2021-05-14T16:54:02Z" finished-at="2021-05-14T16:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeEnvironment -->
+        <test-method status="PASS" signature="TCID_01_VerifyWindowHandle()[pri:0, instance:com.windowhande.WindowHandle@71e7a66b]" name="TCID_01_VerifyWindowHandle" duration-ms="8203" started-at="2021-05-14T16:55:01Z" finished-at="2021-05-14T16:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TCID_01_VerifyWindowHandle -->
+        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:com.windowhande.WindowHandle@71e7a66b]" name="tearDownEnvironment" is-config="true" duration-ms="1383" started-at="2021-05-14T16:55:10Z" finished-at="2021-05-14T16:55:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownEnvironment -->
+      </class> <!-- com.windowhande.WindowHandle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

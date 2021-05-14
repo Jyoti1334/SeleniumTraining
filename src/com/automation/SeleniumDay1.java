@@ -5,16 +5,17 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+
 
 public class SeleniumDay1 {
-	WebDriver driver= null;
 	
+	WebDriver driver=null;
 	public void intilizeWebEnviroment(){
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/externalResources/chromedriver.exe");
-	    driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/ExternalResource1/chromedriver.exe");
+		 driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 	    driver.manage().window().maximize();
+	    driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 	
 	public void setUsername(){
