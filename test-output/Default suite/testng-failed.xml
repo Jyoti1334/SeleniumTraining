@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.windowhande.WindowHandle">
+      <class name="com.testng.AmazonTestNGDemo">
         <methods>
-          <include name="TCID_01_VerifyWindowHandle"/>
-          <include name="intializeEnvironment"/>
+          <include name="register"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="initializeBrowser"/>
+          <include name="support"/>
         </methods>
-      </class> <!-- com.windowhande.WindowHandle -->
+      </class> <!-- com.testng.AmazonTestNGDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

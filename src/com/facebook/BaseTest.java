@@ -8,33 +8,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class BaseTest{
-private  WebDriver driver=null;
+  static  WebDriver driver=null;
 	
 	 
 	
-	public BaseTest() {
-	  }
+	
 
-	 public  WebDriver initializeWebBrowser() {
-		if(driver==null){
+	 public  void initializeWebBrowser() {
 			
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/ExternalResource1/chromedriver.exe");
+	   System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/ExternalResource1/chromedriver.exe");
+	   driver=new ChromeDriver();
+	   driver.get("https://www.facebook.com/");
+	   driver.manage().window().maximize();
 			
-			driver=new ChromeDriver();
-		}
-		
-		
-		driver.get("https://www.facebook.com/r.php");
-		driver.manage().window().maximize();
-		return driver;
-		
-		
-	}
+	    }
 
-    public  void tearDown(){
+      public  void tearDown(){
 		
 		driver.close();
-	}
+	  }
 
 }
 
