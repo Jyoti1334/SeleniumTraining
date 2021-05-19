@@ -1,0 +1,15 @@
+<suite name="TestSuite">
+
+<listeners>
+      <listener class-name="com.windowhande.Listeners"></listener>
+      
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      
+  </listeners>
+    <test name="TestNG Annotations">
+        <classes>
+        <class name="com.windowhande.AlertHandle"/>
+        <class name="com.windowhande.WindowHandle"/>
+        </classes>
+    </test>
+</suite>

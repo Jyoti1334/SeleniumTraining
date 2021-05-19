@@ -1,57 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71" started-at="2021-05-18T12:03:49Z" finished-at="2021-05-18T12:03:49Z">
+  <suite name="TestSuite" duration-ms="307822" started-at="2021-05-19T12:03:14Z" finished-at="2021-05-19T12:08:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71" started-at="2021-05-18T12:03:49Z" finished-at="2021-05-18T12:03:49Z">
-      <class name="com.testng.TestNgPriority">
-        <test-method status="PASS" signature="TCID_01_a()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="TCID_01_a" duration-ms="14" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+    <test name="TestNG Annotations" duration-ms="307822" started-at="2021-05-19T12:03:14Z" finished-at="2021-05-19T12:08:22Z">
+      <class name="com.windowhande.WindowHandle">
+        <test-method status="PASS" signature="intializeEnvironment()[pri:0, instance:com.windowhande.WindowHandle@7a92922]" name="intializeEnvironment" is-config="true" duration-ms="118895" started-at="2021-05-19T17:35:31Z" finished-at="2021-05-19T17:37:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_01_a -->
-        <test-method status="PASS" signature="TCID_01_b()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="TCID_01_b" duration-ms="2" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+        </test-method> <!-- intializeEnvironment -->
+        <test-method status="PASS" signature="TCID_01_VerifyWindowHandle()[pri:0, instance:com.windowhande.WindowHandle@7a92922]" name="TCID_01_VerifyWindowHandle" duration-ms="14478" started-at="2021-05-19T17:37:30Z" finished-at="2021-05-19T17:37:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_01_b -->
-        <test-method status="PASS" signature="TCID_01_c()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="TCID_01_c" duration-ms="3" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+        </test-method> <!-- TCID_01_VerifyWindowHandle -->
+        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:com.windowhande.WindowHandle@7a92922]" name="tearDownEnvironment" is-config="true" duration-ms="30102" started-at="2021-05-19T17:37:45Z" finished-at="2021-05-19T17:38:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_01_c -->
-        <test-method status="PASS" signature="TCID_01_d()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="TCID_01_d" duration-ms="2" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+        </test-method> <!-- tearDownEnvironment -->
+      </class> <!-- com.windowhande.WindowHandle -->
+      <class name="com.windowhande.AlertHandle">
+        <test-method status="PASS" signature="intializeEnvironment()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="intializeEnvironment" is-config="true" duration-ms="117694" started-at="2021-05-19T17:33:14Z" finished-at="2021-05-19T17:35:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_01_d -->
-        <test-method status="PASS" signature="TCID_01_e()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="TCID_01_e" duration-ms="4" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+        </test-method> <!-- intializeEnvironment -->
+        <test-method status="PASS" signature="TCID_01_VerifyAccept()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="TCID_01_VerifyAccept" duration-ms="5525" started-at="2021-05-19T17:35:12Z" finished-at="2021-05-19T17:35:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_01_e -->
-        <test-method status="PASS" signature="tocheckPriority()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="tocheckPriority" duration-ms="3" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+        </test-method> <!-- TCID_01_VerifyAccept -->
+        <test-method status="PASS" signature="TCID_02_VerifyDismiss()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="TCID_02_VerifyDismiss" duration-ms="5302" started-at="2021-05-19T17:35:18Z" finished-at="2021-05-19T17:35:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tocheckPriority -->
-        <test-method status="PASS" signature="e_method()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="e_method" duration-ms="1" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+        </test-method> <!-- TCID_02_VerifyDismiss -->
+        <test-method status="PASS" signature="TCID_03_VerifySendkey()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="TCID_03_VerifySendkey" duration-ms="8370" started-at="2021-05-19T17:35:23Z" finished-at="2021-05-19T17:35:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- e_method -->
-        <test-method status="PASS" signature="a_method()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="a_method" duration-ms="1" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
+        </test-method> <!-- TCID_03_VerifySendkey -->
+        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="tearDownEnvironment" is-config="true" duration-ms="7365" started-at="2021-05-19T17:38:15Z" finished-at="2021-05-19T17:38:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- a_method -->
-        <test-method status="PASS" signature="d_method()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="d_method" duration-ms="1" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- d_method -->
-        <test-method status="PASS" signature="c_method()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="c_method" duration-ms="1" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- c_method -->
-        <test-method status="PASS" signature="b_method()[pri:0, instance:com.testng.TestNgPriority@763d9750]" name="b_method" duration-ms="1" started-at="2021-05-18T17:33:49Z" finished-at="2021-05-18T17:33:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- b_method -->
-      </class> <!-- com.testng.TestNgPriority -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDownEnvironment -->
+      </class> <!-- com.windowhande.AlertHandle -->
+    </test> <!-- TestNG Annotations -->
+  </suite> <!-- TestSuite -->
 </testng-results>

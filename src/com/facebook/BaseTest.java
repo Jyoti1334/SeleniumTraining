@@ -16,7 +16,7 @@ public class BaseTest{
 
 	 public  void initializeWebBrowser() {
 			
-	   System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/ExternalResource1/chromedriver.exe");
+	   System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/chromedriver.exe");
 	   driver=new ChromeDriver();
 	   driver.get("https://www.facebook.com/");
 	   driver.manage().window().maximize();

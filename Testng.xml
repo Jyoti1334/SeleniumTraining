@@ -1,0 +1,11 @@
+<suite name="TestSuite">
+
+
+    <test name="TestNG Annotations">
+        <classes>
+        <class name="com.windowhande.AlertHandle"/>
+        <class name="com.windowhande.WindowHandle"/>
+        </classes>
+    </test>
+    
+</suite>
