@@ -1,47 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="307822" started-at="2021-05-19T12:03:14Z" finished-at="2021-05-19T12:08:22Z">
+  <suite name="TestNg_Groupping_Suite" duration-ms="732" started-at="2021-05-20T07:52:28Z" finished-at="2021-05-20T07:52:29Z">
     <groups>
+      <group name="Group B">
+        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
+        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
+        <method signature="TestNG_Groupping.testcase_04()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testcase_04" class="com.testng.TestNG_Groupping"/>
+      </group> <!-- Group B -->
+      <group name="Group A">
+        <method signature="TestNG_Groupping.testCase_01()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_01" class="com.testng.TestNG_Groupping"/>
+        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
+        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
+      </group> <!-- Group A -->
+      <group name="Include Group">
+        <method signature="Including_Excluding_Groups.TCID_100()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_100" class="com.testng.Including_Excluding_Groups"/>
+        <method signature="Including_Excluding_Groups.TCID_103()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_103" class="com.testng.Including_Excluding_Groups"/>
+      </group> <!-- Include Group -->
     </groups>
-    <test name="TestNG Annotations" duration-ms="307822" started-at="2021-05-19T12:03:14Z" finished-at="2021-05-19T12:08:22Z">
-      <class name="com.windowhande.WindowHandle">
-        <test-method status="PASS" signature="intializeEnvironment()[pri:0, instance:com.windowhande.WindowHandle@7a92922]" name="intializeEnvironment" is-config="true" duration-ms="118895" started-at="2021-05-19T17:35:31Z" finished-at="2021-05-19T17:37:30Z">
+    <test name="Group A" duration-ms="68" started-at="2021-05-20T07:52:28Z" finished-at="2021-05-20T07:52:28Z">
+      <class name="com.testng.TestNG_Groupping">
+        <test-method status="PASS" signature="testCase_01()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_01" duration-ms="26" started-at="2021-05-20T13:22:28Z" finished-at="2021-05-20T13:22:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intializeEnvironment -->
-        <test-method status="PASS" signature="TCID_01_VerifyWindowHandle()[pri:0, instance:com.windowhande.WindowHandle@7a92922]" name="TCID_01_VerifyWindowHandle" duration-ms="14478" started-at="2021-05-19T17:37:30Z" finished-at="2021-05-19T17:37:45Z">
+        </test-method> <!-- testCase_01 -->
+        <test-method status="PASS" signature="testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_03" duration-ms="1" started-at="2021-05-20T13:22:28Z" finished-at="2021-05-20T13:22:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_01_VerifyWindowHandle -->
-        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:com.windowhande.WindowHandle@7a92922]" name="tearDownEnvironment" is-config="true" duration-ms="30102" started-at="2021-05-19T17:37:45Z" finished-at="2021-05-19T17:38:15Z">
+        </test-method> <!-- testCase_03 -->
+      </class> <!-- com.testng.TestNG_Groupping -->
+    </test> <!-- Group A -->
+    <test name="Group B" duration-ms="5" started-at="2021-05-20T07:52:29Z" finished-at="2021-05-20T07:52:29Z">
+      <class name="com.testng.TestNG_Groupping">
+        <test-method status="PASS" signature="testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testCase_03" duration-ms="2" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownEnvironment -->
-      </class> <!-- com.windowhande.WindowHandle -->
-      <class name="com.windowhande.AlertHandle">
-        <test-method status="PASS" signature="intializeEnvironment()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="intializeEnvironment" is-config="true" duration-ms="117694" started-at="2021-05-19T17:33:14Z" finished-at="2021-05-19T17:35:12Z">
+        </test-method> <!-- testCase_03 -->
+        <test-method status="PASS" signature="testcase_04()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testcase_04" duration-ms="1" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intializeEnvironment -->
-        <test-method status="PASS" signature="TCID_01_VerifyAccept()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="TCID_01_VerifyAccept" duration-ms="5525" started-at="2021-05-19T17:35:12Z" finished-at="2021-05-19T17:35:18Z">
+        </test-method> <!-- testcase_04 -->
+      </class> <!-- com.testng.TestNG_Groupping -->
+    </test> <!-- Group B -->
+    <test name="Include and Exclude Group" duration-ms="8" started-at="2021-05-20T07:52:29Z" finished-at="2021-05-20T07:52:29Z">
+      <class name="com.testng.Including_Excluding_Groups">
+        <test-method status="PASS" signature="TCID_100()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_100" duration-ms="2" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_01_VerifyAccept -->
-        <test-method status="PASS" signature="TCID_02_VerifyDismiss()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="TCID_02_VerifyDismiss" duration-ms="5302" started-at="2021-05-19T17:35:18Z" finished-at="2021-05-19T17:35:23Z">
+        </test-method> <!-- TCID_100 -->
+        <test-method status="PASS" signature="TCID_103()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_103" duration-ms="2" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_02_VerifyDismiss -->
-        <test-method status="PASS" signature="TCID_03_VerifySendkey()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="TCID_03_VerifySendkey" duration-ms="8370" started-at="2021-05-19T17:35:23Z" finished-at="2021-05-19T17:35:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCID_03_VerifySendkey -->
-        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:com.windowhande.AlertHandle@224aed64]" name="tearDownEnvironment" is-config="true" duration-ms="7365" started-at="2021-05-19T17:38:15Z" finished-at="2021-05-19T17:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownEnvironment -->
-      </class> <!-- com.windowhande.AlertHandle -->
-    </test> <!-- TestNG Annotations -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- TCID_103 -->
+      </class> <!-- com.testng.Including_Excluding_Groups -->
+    </test> <!-- Include and Exclude Group -->
+  </suite> <!-- TestNg_Groupping_Suite -->
 </testng-results>

@@ -7,10 +7,15 @@ import org.testng.annotations.Test;
 import com.facebook.Utilities;
 
 public class TestClass extends BaseTest  {
-	
+	public Utilities objUtilities1;
+	public Wrapper_Function objWrapperFun;
+	public FacebookPageObjects objFacebookPageObjects;
 	@BeforeTest
 	public void TCID_001_VerifyWebEnvironment(){
 		this.initializeWebBrowser();
+		objUtilities1=new Utilities();
+		objWrapperFun=new Wrapper_Function();
+		objFacebookPageObjects=new  FacebookPageObjects();
 		System.out.println("Before Test Exceuted");
 	}
 	
@@ -18,10 +23,6 @@ public class TestClass extends BaseTest  {
 @Test
 	public void TCID_002_VerifySignUp(){
 		
-		Utilities objUtilities1=new Utilities();
-		Wrapper_Function objWrapperFun=new Wrapper_Function();
-		
-        FacebookPageObjects objFacebookPageObjects=new  FacebookPageObjects();
        // objBaseTest.initializeWebBrowser();
         
         objFacebookPageObjects.toCreateNewAccount();

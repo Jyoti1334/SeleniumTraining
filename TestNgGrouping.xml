@@ -1,0 +1,35 @@
+<suite name="TestNg_Groupping_Suite">  
+	<test name="Group A">  
+		<groups>  
+			<run>  
+				<include name="Group A"/>  
+			</run>  
+		</groups>  
+			<classes>  
+					<class name="com.testng.TestNG_Groupping"/>  
+			</classes>  
+	</test> <!-- Test -->  
+	
+	<test name="Group B">  
+		<groups>  
+			<run>  
+				<include name="Group B"/>  
+			</run>  
+		</groups>  
+			<classes>  
+				<class name="com.testng.TestNG_Groupping"/>  
+			</classes> 
+ 	</test> <!-- Test --> 
+ 	
+	<test name="Include and Exclude Group">  
+		<groups>  
+			<run>  
+				<include name="Include Group"/>  
+				<exclude name="Exclude Group"/>  
+			</run>  
+		</groups>  
+			<classes>  
+				<class name="com.testng.Including_Excluding_Groups"/>  
+			</classes> 
+ 	</test> <!-- Test -->  
+</suite> <!-- Suite -->  
