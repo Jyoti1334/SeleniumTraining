@@ -1,59 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNg_Groupping_Suite" duration-ms="732" started-at="2021-05-20T07:52:28Z" finished-at="2021-05-20T07:52:29Z">
+  <suite name="Default suite" duration-ms="43225" started-at="2021-05-21T12:25:28Z" finished-at="2021-05-21T12:26:11Z">
     <groups>
-      <group name="Group B">
-        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
-        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
-        <method signature="TestNG_Groupping.testcase_04()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testcase_04" class="com.testng.TestNG_Groupping"/>
-      </group> <!-- Group B -->
-      <group name="Group A">
-        <method signature="TestNG_Groupping.testCase_01()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_01" class="com.testng.TestNG_Groupping"/>
-        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
-        <method signature="TestNG_Groupping.testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testCase_03" class="com.testng.TestNG_Groupping"/>
-      </group> <!-- Group A -->
-      <group name="Include Group">
-        <method signature="Including_Excluding_Groups.TCID_100()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_100" class="com.testng.Including_Excluding_Groups"/>
-        <method signature="Including_Excluding_Groups.TCID_103()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_103" class="com.testng.Including_Excluding_Groups"/>
-      </group> <!-- Include Group -->
     </groups>
-    <test name="Group A" duration-ms="68" started-at="2021-05-20T07:52:28Z" finished-at="2021-05-20T07:52:28Z">
-      <class name="com.testng.TestNG_Groupping">
-        <test-method status="PASS" signature="testCase_01()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_01" duration-ms="26" started-at="2021-05-20T13:22:28Z" finished-at="2021-05-20T13:22:28Z">
+    <test name="Default test" duration-ms="43225" started-at="2021-05-21T12:25:28Z" finished-at="2021-05-21T12:26:11Z">
+      <class name="com.synchronizationWait.TestClass">
+        <test-method status="PASS" signature="initializeWebEnvironment()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="initializeWebEnvironment" is-config="true" duration-ms="34221" started-at="2021-05-21T17:55:28Z" finished-at="2021-05-21T17:56:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_01 -->
-        <test-method status="PASS" signature="testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17ed40e0]" name="testCase_03" duration-ms="1" started-at="2021-05-20T13:22:28Z" finished-at="2021-05-20T13:22:28Z">
+        </test-method> <!-- initializeWebEnvironment -->
+        <test-method status="PASS" signature="verifyAmazonPageTitle()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="verifyAmazonPageTitle" duration-ms="460" started-at="2021-05-21T17:56:02Z" finished-at="2021-05-21T17:56:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_03 -->
-      </class> <!-- com.testng.TestNG_Groupping -->
-    </test> <!-- Group A -->
-    <test name="Group B" duration-ms="5" started-at="2021-05-20T07:52:29Z" finished-at="2021-05-20T07:52:29Z">
-      <class name="com.testng.TestNG_Groupping">
-        <test-method status="PASS" signature="testCase_03()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testCase_03" duration-ms="2" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
+        </test-method> <!-- verifyAmazonPageTitle -->
+        <test-method status="PASS" signature="verifyAmazonPayLink()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="verifyAmazonPayLink" duration-ms="6644" started-at="2021-05-21T17:56:03Z" finished-at="2021-05-21T17:56:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase_03 -->
-        <test-method status="PASS" signature="testcase_04()[pri:0, instance:com.testng.TestNG_Groupping@17d99928]" name="testcase_04" duration-ms="1" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
+        </test-method> <!-- verifyAmazonPayLink -->
+        <test-method status="PASS" signature="verifyTearDown()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="verifyTearDown" is-config="true" duration-ms="1887" started-at="2021-05-21T17:56:09Z" finished-at="2021-05-21T17:56:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase_04 -->
-      </class> <!-- com.testng.TestNG_Groupping -->
-    </test> <!-- Group B -->
-    <test name="Include and Exclude Group" duration-ms="8" started-at="2021-05-20T07:52:29Z" finished-at="2021-05-20T07:52:29Z">
-      <class name="com.testng.Including_Excluding_Groups">
-        <test-method status="PASS" signature="TCID_100()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_100" duration-ms="2" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCID_100 -->
-        <test-method status="PASS" signature="TCID_103()[pri:0, instance:com.testng.Including_Excluding_Groups@2eee9593]" name="TCID_103" duration-ms="2" started-at="2021-05-20T13:22:29Z" finished-at="2021-05-20T13:22:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TCID_103 -->
-      </class> <!-- com.testng.Including_Excluding_Groups -->
-    </test> <!-- Include and Exclude Group -->
-  </suite> <!-- TestNg_Groupping_Suite -->
+        </test-method> <!-- verifyTearDown -->
+      </class> <!-- com.synchronizationWait.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

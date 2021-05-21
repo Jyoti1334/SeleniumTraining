@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestSuite]">
-  <test name="TestNG Annotations(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.windowhande.WindowHandle">
+      <class name="com.synchronizationWait.TestClass">
         <methods>
-          <include name="TCID_01_VerifyWindowHandle"/>
+          <include name="verifyAmazonPageTitle"/>
+          <include name="verifyAmazonPayLink"/>
+          <include name="initializeWebEnvironment"/>
         </methods>
-      </class> <!-- com.windowhande.WindowHandle -->
-      <class name="com.windowhande.AlertHandle">
-        <methods>
-          <include name="TCID_01_VerifyAccept"/>
-          <include name="TCID_03_VerifySendkey"/>
-          <include name="intializeEnvironment"/>
-          <include name="TCID_02_VerifyDismiss"/>
-        </methods>
-      </class> <!-- com.windowhande.AlertHandle -->
+      </class> <!-- com.synchronizationWait.TestClass -->
     </classes>
-  </test> <!-- TestNG Annotations(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
