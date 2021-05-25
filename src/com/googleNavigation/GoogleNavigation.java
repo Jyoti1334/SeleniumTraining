@@ -1,5 +1,6 @@
 package com.googleNavigation;
 
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -53,84 +54,56 @@ public class GoogleNavigation {
 	   public void toNavigatePage(){
 		   objJSE=(JavascriptExecutor)driver;
 		   objJSE.executeScript("scroll(0,4000)");
-		  List<WebElement> allLinks=driver.findElements(By.tagName("a"));
-		   for(WebElement link:allLinks){
-			   System.out.println(link.getText() + " - " + link.getAttribute("href"));
-		   }
-		  // System.out.println(allLinks.size()); 
-//		   List<WebElement> allLinks=driver.findElements(By.xpath("//div[@role='navigation']/following::span[@id='xjs']"));
-//		   System.out.println(allLinks.size()); 
-//		   
-//		   for(int i=0;i<allLinks.size();i++){
-//			   String strpageNumbers=allLinks.get(i).getText();
-//			   if(strpageNumbers.contains("23"))
-//			   {
-//				   allLinks.get(i).click();
-//				   break;
-//			   }
-//		   }
-			 
-//		  
-//		   List<WebElement> pageNumbers = driver.findElements(By.cssSelector("[valign='top'] > td"));
-//	   for(int j = 1 ; j < pageNumbers.size() ; j++) {
-////			   String strListIteam=allLinks.get(j).getText(); 
-////			   if(allLinks.get(j).getText().equals("23")){
-////				   allLinks.get(j).click(); 
-////				   break;
-////			   }
-////			   
-////			   
-////		   }
-//			   
-//			   //System.out.println(pageNumbers.size());
-//	       if (j > 1) {// we don't need to navigate to the first page
-//		       
-//    	   driver.findElement(By.cssSelector("[aria-label='Page " + j + "']")).click(); // navigate to page number j
-//           continue;
-//      }
-//		   }
-//	         
-//
-//		       String pagesearch = driver.getCurrentUrl();
-//
-//       List<WebElement> findElements = driver.findElements(By.xpath("//*[@id='rso']//h3/a"));
-//       System.out.println(findElements.size());
-//	       for(int i=0;i<findElements.size();i++){
-//           findElements= driver.findElements(By.xpath("//*[@id='rso']//h3/a"));                
-//           findElements.get(i).click();	       }
-//                driver.navigate().to(pagesearch);
-//          JavascriptExecutor jse = (JavascriptExecutor) driver;
-////           //Scroll vertically downward by 250 pixels
-//           jse.executeScript("window.scrollBy(0,250)", "");
-////		   
-//	   }
-//	
-	   }
-	   public void navigate(){
-		   objJSE=(JavascriptExecutor)driver;
-		   objJSE.executeScript("scroll(0,4000)");
-		   List<WebElement> pageNumbers=driver.findElements(By.xpath("//div[@role='navigation']/following::tbody"));
 		  // List<WebElement> pageNumbers = driver.findElements(By.cssSelector("[valign='top'] > td"));
+		   for(int j = 1 ; j <=23 ; j++) {
+	            if (j ==10) {// we don't need to navigate to the first page
+	                driver.findElement(By.cssSelector("[aria-label='Page " + j + "']")).click(); // navigate to page number j
+	                objJSE.executeScript("scroll(0,4000)");
+	                continue;
+	              
+	            }
+	            if(j==14){
+               	 driver.findElement(By.cssSelector("[aria-label='Page " + j + "']")).click(); // navigate to page number j
+	                objJSE.executeScript("scroll(0,4000)");
+	                continue;
+               }
+	            if(j==18){
+	               	 driver.findElement(By.cssSelector("[aria-label='Page " + j + "']")).click(); // navigate to page number j
+		                objJSE.executeScript("scroll(0,4000)");
+		                continue;
+	               }
+	            if(j==22){
+	               	 driver.findElement(By.cssSelector("[aria-label='Page " + j + "']")).click(); // navigate to page number j
+		                objJSE.executeScript("scroll(0,4000)");
+		                continue;
+	               }
+	            if(j==23){
+	               	 driver.findElement(By.cssSelector("[aria-label='Page " + j + "']")).click(); // navigate to page number j
+		                //objJSE.executeScript("scroll(0,4000)");
+		                break;
+	               }
+		   }}
 		   
-		   for(int j = 1 ; j < pageNumbers.size() ; j++) {
-			   if(j>1)
-			   {
-				   driver.navigate().forward();
-				 //driver.findElement(By.xpath("//span[text()='Next']")).click();
-				// objJSE.executeScript("scroll(0,4000)");
-				 
-			   }
-			   
+		   public void toClickSecondLastLink(){
+			  // objJSE=(JavascriptExecutor)driver;
+			  // objJSE.executeScript("scroll(0,500)");
+			   driver.findElement(By.xpath("//div[@id='rso']//following::div[@class='g'][8]")).click();
+			   String strTitle=driver.getTitle();
+			   System.out.println("Title is :"+strTitle);
 		   }
-	   }
+		   
+
+
 	   
+	 
 	   
 	public static void main(String[] args){
 		GoogleNavigation objGoogleNavigation=new GoogleNavigation();
 		objGoogleNavigation.intilizeWebEnviroment();
 		objGoogleNavigation.toSearch();
 		objGoogleNavigation.toNavigatePage();
-		//objGoogleNavigation.navigate();
+		objGoogleNavigation.toClickSecondLastLink();
+		
 	}
 
 }

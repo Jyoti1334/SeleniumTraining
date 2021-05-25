@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.synchronizationWait.TestClass">
+      <class name="com.testng.AmazonTestNGDemo">
         <methods>
-          <include name="verifyAmazonPageTitle"/>
-          <include name="verifyAmazonPayLink"/>
-          <include name="initializeWebEnvironment"/>
+          <include name="TCID_100_verifySiginLink"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="goBackToHomepage"/>
+          <include name="initializeBrowser"/>
+          <include name="terminateBrowser"/>
         </methods>
-      </class> <!-- com.synchronizationWait.TestClass -->
+      </class> <!-- com.testng.AmazonTestNGDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

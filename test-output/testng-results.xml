@@ -1,29 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43225" started-at="2021-05-21T12:25:28Z" finished-at="2021-05-21T12:26:11Z">
+  <suite name="Default suite" duration-ms="31949" started-at="2021-05-25T06:58:56Z" finished-at="2021-05-25T06:59:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43225" started-at="2021-05-21T12:25:28Z" finished-at="2021-05-21T12:26:11Z">
-      <class name="com.synchronizationWait.TestClass">
-        <test-method status="PASS" signature="initializeWebEnvironment()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="initializeWebEnvironment" is-config="true" duration-ms="34221" started-at="2021-05-21T17:55:28Z" finished-at="2021-05-21T17:56:02Z">
+    <test name="Default test" duration-ms="31949" started-at="2021-05-25T06:58:56Z" finished-at="2021-05-25T06:59:28Z">
+      <class name="com.testng.AmazonTestNGDemo">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:com.testng.AmazonTestNGDemo@64c64813]" name="initializeBrowser" is-config="true" duration-ms="16704" started-at="2021-05-25T12:28:56Z" finished-at="2021-05-25T12:29:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializeWebEnvironment -->
-        <test-method status="PASS" signature="verifyAmazonPageTitle()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="verifyAmazonPageTitle" duration-ms="460" started-at="2021-05-21T17:56:02Z" finished-at="2021-05-21T17:56:03Z">
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="verifyHomepageTitle()[pri:0, instance:com.testng.AmazonTestNGDemo@64c64813]" name="verifyHomepageTitle" is-config="true" duration-ms="98" started-at="2021-05-25T12:29:12Z" finished-at="2021-05-25T12:29:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAmazonPageTitle -->
-        <test-method status="PASS" signature="verifyAmazonPayLink()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="verifyAmazonPayLink" duration-ms="6644" started-at="2021-05-21T17:56:03Z" finished-at="2021-05-21T17:56:09Z">
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method status="FAIL" signature="TCID_100_verifySiginLink()[pri:0, instance:com.testng.AmazonTestNGDemo@64c64813]" name="TCID_100_verifySiginLink" duration-ms="12723" started-at="2021-05-25T12:29:12Z" finished-at="2021-05-25T12:29:25Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotEquals(Assert.java:856)
+	at org.testng.Assert.assertNotEquals(Assert.java:861)
+	at com.testng.AmazonTestNGDemo.TCID_100_verifySiginLink(AmazonTestNGDemo.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAmazonPayLink -->
-        <test-method status="PASS" signature="verifyTearDown()[pri:0, instance:com.synchronizationWait.TestClass@1c53fd30]" name="verifyTearDown" is-config="true" duration-ms="1887" started-at="2021-05-21T17:56:09Z" finished-at="2021-05-21T17:56:11Z">
+        </test-method> <!-- TCID_100_verifySiginLink -->
+        <test-method status="PASS" signature="goBackToHomepage()[pri:0, instance:com.testng.AmazonTestNGDemo@64c64813]" name="goBackToHomepage" is-config="true" duration-ms="1847" started-at="2021-05-25T12:29:25Z" finished-at="2021-05-25T12:29:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTearDown -->
-      </class> <!-- com.synchronizationWait.TestClass -->
+        </test-method> <!-- goBackToHomepage -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:com.testng.AmazonTestNGDemo@64c64813]" name="terminateBrowser" is-config="true" duration-ms="445" started-at="2021-05-25T12:29:27Z" finished-at="2021-05-25T12:29:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateBrowser -->
+      </class> <!-- com.testng.AmazonTestNGDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
